@@ -1,9 +1,8 @@
+import './refs';
 import menuItems from '../menu.json';
 import menuTemplate from '../templates/menu-items.hbs';
 
 
+const markup = menuTemplate(menuItems);
 
-// const galleryRef = document.querySelector('.js-menu');
-
-// const markup = menuItems(menuTemplate);
-// galleryRef.insertAdjacentHTML('beforeend', markup);
+refs.galleryList.insertAdjacentHTML('beforeend', markup);
